@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-size: 18px;
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  font-family: 'Plus Jakarta sans-serif';
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+header {
+  overflow: hidden;
+}
+
+.nav-bar ul {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar ul .test {
+  padding: 0.7rem 2rem;
+  border-radius: 28px;
+  color: white;
+  border: none;
+  z-index: 1;
+  background-color: hsl(233, 54%, 16%);
+}
+.test:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: rgba(102, 108, 163, 1);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+.hero-text {
+  display: grid;
+  gap: 2rem;
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.hero-text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #83869a;
+  width: 23rem;
+}
+.hero-section img {
+  /* border: 1px solid peru; */
+  max-width: 100%;
+  /* position: absolute; */
+  /* width: 85%; */
+  /* position: relative;
+  bottom: 100px;
+  left: 500px; */
+  /* flex: 1; */
+  margin-left: 400px;
+  margin-top: -180px;
+  z-index: -1532342;
+}
+
+.hero-section button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 31.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+.hero-section button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.boxWrap {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 2rem;
+  padding-bottom: 8.75rem;
+}
+/* i had to comment this out because i saw that the layout was responsive and then i had to use grid  the code will only work if you section with div with top and bottom which would be difficult changing to tablet and mobile version*/
+/* .box-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+} */
+/* .box-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+} */
+.box {
+  display: grid;
+  border-radius: 15px;
+  height: 260px;
+  background: #fff;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  padding: 0rem 2rem 2rem 2rem;
+}
+.box:first-child {
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+  padding: 4rem 2rem 8.625rem 2rem;
+}
+.box:first-child h2 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  color: white;
+}
+
+.box img {
+  position: relative;
+  bottom: 2rem;
+}
+.box-details {
+  /* border: 1px solid red; */
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .box-details:nth-child(3) {
+  background: blue;
+}
+h2.box-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: hsl(233, 54%, 16%);
+}
+.box-details p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  width: 18rem;
+  color: hsl(232, 10%, 56%);
+}
+.box a {
+  text-decoration: none;
+  color: hsl(341, 92%, 62%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.box a:hover {
+  cursor: pointer;
+  color: hsla(341, 92%, 62%, 0.6);
+}
+footer {
+  background: hsla(234, 53%, 16%, 1);
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.footer-nav .btnWrap button {
+  padding: 0.7rem 2rem;
+  border-radius: 28px;
+  color: white;
+  border: none;
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+.footer-nav .btnWrap button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  cursor: pointer;
+}
