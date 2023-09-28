@@ -51,7 +51,7 @@ header {
 }
 .hero-text {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   flex: 1;
 }
 .hero-text h1 {
@@ -72,15 +72,9 @@ header {
 .hero-section img {
   /* border: 1px solid peru; */
   max-width: 100%;
-  /* position: absolute; */
-  /* width: 85%; */
-  /* position: relative;
-  bottom: 100px;
-  left: 500px; */
-  /* flex: 1; */
-  margin-left: 400px;
-  margin-top: -180px;
-  z-index: -1532342;
+  position: relative;
+  left: 400px;
+  bottom: 150px;
 }
 
 .hero-section button {
@@ -100,7 +94,7 @@ header {
   gap: 5rem 2rem;
   padding-bottom: 8.75rem;
 }
-/* i had to comment this out because i saw that the layout was responsive and then i had to use grid  the code will only work if you section with div with top and bottom which would be difficult changing to tablet and mobile version*/
+/* I had to comment this out because i saw that the layout was responsive and then i had to use grid  the code will only work if you section with div with top and bottom which would be difficult changing to tablet and mobile version*/
 /* .box-top {
   display: flex;
   align-items: center;
